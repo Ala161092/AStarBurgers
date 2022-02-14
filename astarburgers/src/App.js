@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Menu from './components/Menu';
 import ImageView from './components/ImageView';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Menu />
       <ImageView />
+      <Contact />
      
     </div>
   );

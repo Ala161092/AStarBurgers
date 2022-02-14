@@ -20,16 +20,20 @@
         transform: translate(-50%, -50%);
 
 
-        h1 {
+      
+
+            h1 {
             color: white;
-            font-size: 36px;
+            font-size: 50px;
             word-spacing: 4px;
             letter-spacing: 1px;
             margin-top: 0;
             margin-bottom: 20px;
         }
 
-        button {
+        
+
+        .btn {
             color: white;
             padding: 10px 20px;
             background: hsla(44, 90%, 56%, 0.726);
@@ -52,6 +56,7 @@
     .navbar-dark .navbar-nav .nav-link {
         color: white;
         margin-right: 20px;
+      
 
         &:hover {
             border-bottom: 4px solid hsla(44, 90%, 56%, 0.726);
@@ -79,9 +84,11 @@
         // margin: 0 auto;
 
         .logo {
-            height: 100px;
-            width: auto;
+           
+            width: 70px;
             float: left;
+            margin-left: 50px;
+            margin-top: 25px;
 
         }
 
@@ -92,10 +99,13 @@
         margin-top: 25px;
         font-family: 'Roboto Slab', serif;
         font-size: 23px;
+        
 
 
 
 
 
     }
+
+
 }

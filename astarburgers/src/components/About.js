@@ -5,7 +5,7 @@ import ncassLogo from '../assets/ncass.jpg'
 
 const About = () => {
   return (
-  <div className='about-wrapper'>
+  <div className='about-wrapper' id='about'>
       <h2>About Us</h2>
       <p className='long-copy'> Here at Astarburgers our number one priority is customer satisfaction.
          With our well thought out and carefully designed menu we aim to cater for every palette.  
@@ -18,9 +18,14 @@ const About = () => {
                 <FaCaravan fontSize='70px' color='#f4bf2b' />
                 <p>
                     Completely self-sufficent catering unit, we can cater for:
-                    <br/> Large Sporting Events, Festivals, Weddings, Street Parties & Carnivals
+                    <ul className='catering-lists'>
+                        <li> Large Sporting Events</li>
+                        <li> Festivals</li>
+                        <li> Weddings</li>
+                        <li> Street Parties</li>
+                        <li> Carnivals</li>
+                    </ul>
                 </p>
-                   
             </section>
             <section className='cards'>
                 <h3>NCASS Member</h3>

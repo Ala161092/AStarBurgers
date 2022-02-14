@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap'
+
 
 import heroLogo from "../assets/logo2.png"
 
@@ -8,7 +9,7 @@ const Navigation = () => {
   return (
     <div className='nav-wrapper'>
           <img className='logo' src={heroLogo}/>
-      <Navbar className='nav' collapseOnSelect variant='dark' sticky='top' expand='sm'>
+      <Navbar className='nav' collapseOnSelect variant='dark' expand='sm'>
           <Container fluid>
 
               <Nav className='navbar-nav'>
