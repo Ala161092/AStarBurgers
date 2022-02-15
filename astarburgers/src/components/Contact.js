@@ -1,42 +1,52 @@
 import React from "react";
 import { useState } from "react";
-import { send } from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 
 
 
 const Contact = () => {
-    const [successfulMessage, setsuccessfulMessage] = useState('')
-
-    
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        to_name: '',
-        message: '',
-        reply_to: '',
-    })
-
-    const handleChange = (event) => {
-        setToSend({...toSend, [event.target.name]: event.target.value})
-    }
+    const [successfulMessage, setsuccessfulMessage] = useState(false)
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
     const onSubmit = (event) => {
         event.preventDefault()
-        send(
-            'service_09hnpa9',
-            'template_0a4i31f',
-            toSend,
-            'user_sBqMaHIyQs01RJo9FTsWG'
-        ) 
-        .then((response) => {
-            setsuccessfulMessage('Success, email has been sent')
-            console.log('Success, email has been sent', response.status, response.text)
-            
-        })
-        .catch((error) => {
-            setsuccessfulMessage('Error, check all details have been written correctly')
-            console.log('Error, check all details have been written correctly', error)
-        })
+        if ( name && email && message) {
+        // send(
+        //     'service_09hnpa9',
+        //     'template_0a4i31f',
+        //     toSend,
+        //     'user_sBqMaHIyQs01RJo9FTsWG'
+        // ) 
+        // .then((response) => {
+        //     setsuccessfulMessage('Thank you, email has been sent. We will contact you shortly')
+        //     console.log('Success, email has been sent', response.status, response.text)
+        // })
+        // .catch((error) => {
+        //     setsuccessfulMessage('Error, check all details have been written correctly')
+        //     console.log('Error, check all details have been written correctly', error)
+        // })
+        const serviceId = 'service_09hnpa9'
+        const templateId = 'template_0a4i31f'
+        const userId = 'user_sBqMaHIyQs01RJo9FTsWG'
+        const templateParams = {
+            name, 
+            email,
+            message
+        };
+        emailjs.send(serviceId, templateId, templateParams, userId)
+            .then(response => console.log(response))
+            .then(error => console.log(error))
+        setName('')
+        setEmail('')
+        setMessage('')
+        setsuccessfulMessage(true)
+        } else {
+            alert('please fill in all fields')
+        }
+
     }
 
 
@@ -50,39 +60,28 @@ const Contact = () => {
             type='text'
             name='from_name'
             placeholder="Enter your name"
-            value={toSend.from_name}
-            onChange={handleChange}
+            value={name}
+            onChange={e => setName(e.target.value)}
             required
-            />
-            <input
-            type='text'
-            name='to_name'
-            placeholder="Enter to name"
-            value={toSend.to_name}
-            onChange={handleChange}
-            />
-            <textarea
-            type='text'
-            name='message'
-            placeholder="Enter your Message"
-            value={toSend.message}
-            onChange={handleChange}
-            required
-            
             />
             <input
             type='email'
             name='reply_to'
             placeholder="Enter a valid email address"
-            value={toSend.reply_to}
-            onChange={handleChange}
+            value={email}
+            onChange={e => setEmail(e.target.value)}
             required
             />
-            
-            <button className='submit-btn' type='submit'>Submit!</button>
-        <div>
-            <p>{successfulMessage}</p>
-        </div>
+            <textarea
+            type='text'
+            name='message'
+            placeholder="Enter your Message"
+            value={message}
+            onChange={e => setMessage(e.target.value)}
+            required
+            />
+            <button className='submit-btn' type='submit'>Send Message</button>
+        <span className={successfulMessage ? 'visible' : 'hidden'}> Thank you for your message, we will be in touch shortly. </span>
         </form>
         <div className="contact-details">
             <div>
@@ -94,7 +93,8 @@ const Contact = () => {
             <p>info@astarburgers.com</p>
             </div>
             <div>
-            <ion-icon name="logo-instagram"><a href='instagram.com/astarburgers_'/></ion-icon>
+            <a href='https://www.instagram.com/astarburgers_'><ion-icon name="logo-instagram"></ion-icon></a>
+            <p>instagram.com/astarburgers_</p>
             </div>
         </div>
     </div>

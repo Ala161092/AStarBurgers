@@ -1,0 +1,144 @@
+/*----------------- Small phones: from 0 to 480px-----------------------*/
+
+/*--Header--*/
+@media (max-width: 480px) {
+
+    .header {
+        width: 100%;
+
+        .hero-text-box {
+            max-width: 400px;
+
+
+            h1 {
+                font-size: 25px;
+                word-spacing: 2px;
+            }
+
+            .btn {
+                padding: 5px, 10px;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+
+    /*--Nav--*/
+
+    .header-wrapper {
+
+        .nav-wrapper {
+
+            .logo {
+                width: 55px;
+
+            }
+        }
+
+        .nav {
+            font-size: 18px;
+        }
+    }
+
+
+
+    /*-----------About--------------*/
+
+    .about-wrapper {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        margin-left: 25px;
+
+        h2 {
+            font-size: 30px;
+        }
+
+
+        .long-copy {
+            width: 100%;
+            text-align: left;
+        }
+
+
+        .about-card-container {
+            flex-direction: column;
+
+
+
+
+            .cards {
+                width: 100%;
+                text-align: left;
+
+
+                h3 {
+                    font-size: 21px;
+                }
+
+                svg {
+                    font-size: 50px;
+                }
+
+                img {
+                    width: 80px;
+                }
+
+
+
+                p {
+                    text-align: left;
+                    margin: 0;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    /*-----------Menu--------------*/
+
+    .menu-wrapper {
+
+
+        .card-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
+    /*-----------Contact--------------*/
+
+    .contact-wrapper {
+
+        .form-wrapper {
+            flex-direction: column;
+            gap: 50px;
+
+
+
+            form {
+                width: 90%;
+            }
+
+
+
+            .contact-details {
+                width: 90%;
+                height: 300px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+
+                ion-icon {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+
+}

@@ -11,6 +11,7 @@
     .hero-text-box {
         text-align: left;
         position: absolute;
+
         width: 1140px;
         margin: 0 auto;
         top: 50%;
@@ -20,7 +21,10 @@
         transform: translate(-50%, -50%);
 
 
-      
+            p {
+                color: white;
+                width: 60%;
+            }
 
             h1 {
             color: white;
