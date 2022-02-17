@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap'
 
 
 import heroLogo from "../assets/logo2.png"
 
 const Navigation = () => {
+
+    const [colorNavDisplay, setcolorNavDisplay] = useState(false)
+
+    const changeNavDisplay = () => {
+        if (window.scrollY >= 50) {
+            setcolorNavDisplay(true)
+        } else {
+            setcolorNavDisplay(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavDisplay)
  
   return (
     <div className='nav-wrapper'>
           <img className='logo' src={heroLogo}/>
-      <Navbar className='nav' collapseOnSelect variant='dark' expand='sm'>
+      <Navbar className={colorNavDisplay ? 'fixed-top nav' : 'nav'} collapseOnSelect variant='dark' expand='sm'>
           <Container fluid>
 
-              <Nav className='navbar-nav'>
+              <Nav className={colorNavDisplay ? 'ms-auto' : 'navbar' }>
                   <Nav.Link href='#home'>Home</Nav.Link>
                   <Nav.Link href='#about'>About</Nav.Link>
                   <Nav.Link href='#menu'>Menu</Nav.Link>
