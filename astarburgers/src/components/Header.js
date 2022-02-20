@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import Nav2 from "./Nav2";
+import heroLogo from '../assets/logo2.png'
 
 const Header = () => {
   return (
     <div className="header-wrapper" id="home">
+      <img className='logo' src={heroLogo}/>
       <Nav2 />
       <div className="header">
         <div className="hero-text-box">

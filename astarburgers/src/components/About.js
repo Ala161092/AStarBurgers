@@ -20,14 +20,9 @@ const About = () => {
           <FaCaravan fontSize="70px" color="#f4bf2b" />
           <h3>Catering</h3>
           <p>
-            Completely self-sufficent catering unit, we can cater for:
-            <ul className="catering-lists">
-              <li> Large Sporting Events</li>
-              <li> Festivals</li>
-              <li> Weddings</li>
-              <li> Street Parties</li>
-              <li> Carnivals</li>
-            </ul>
+            Completely self-sufficent catering unit, we can cater to:
+            <br/>
+            Large Sporting Events, Festivals, Weddings, Street Parties & Carnivals
           </p>
         </section>
         <section className="cards">

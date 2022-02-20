@@ -1,7 +1,7 @@
 /*----------------- Small phones: from 0 to 480px-----------------------*/
 
 /*--Header--*/
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 500px) {
 
     .header {
         width: 100%;
@@ -114,6 +114,20 @@
     }
 
 
+     /*-----------Menu--------------*/
+     .meals-wrapper {
+
+        .meal-show-container {
+
+
+            li {
+                width: 50%;
+            }
+
+        }
+     }
+
+
 
     /*-----------Contact--------------*/
 
@@ -152,7 +166,7 @@
 
 
 /*----------------------- Small phones to small tablets: from 481px to 767px------------------*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 501px) and (max-width: 767px) {
 
 /*-------Header-------*/
 
