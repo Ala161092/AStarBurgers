@@ -24,7 +24,7 @@ const Navigation = () => {
       <Navbar className={colorNavDisplay ? 'fixed-top nav' : 'nav'} collapseOnSelect variant='dark' expand='sm'>
           <Container fluid>
 
-              <Nav className={colorNavDisplay ? 'ms-auto' : 'navbar' }>
+              <Nav className={colorNavDisplay ? 'ms-auto nav-scroll'  : 'navbar' }>
                   <Nav.Link href='#home'>Home</Nav.Link>
                   <Nav.Link href='#about'>About</Nav.Link>
                   <Nav.Link href='#menu'>Menu</Nav.Link>
