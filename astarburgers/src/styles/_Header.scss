@@ -21,12 +21,12 @@
         transform: translate(-50%, -50%);
 
 
-            p {
-                color: white;
-                width: 60%;
-            }
+        p {
+            color: white;
+            width: 60%;
+        }
 
-            h1 {
+        h1 {
             color: white;
             font-size: 50px;
             word-spacing: 4px;
@@ -35,7 +35,7 @@
             margin-bottom: 20px;
         }
 
-        
+
 
         .btn {
             color: white;
@@ -60,7 +60,7 @@
     .navbar-dark .navbar-nav .nav-link {
         color: white;
         margin-right: 20px;
-      
+
 
         &:hover {
             border-bottom: 4px solid hsla(44, 90%, 56%, 0.726);
@@ -69,17 +69,13 @@
         }
 
 
-        
+
 
     }
 
-    
-    
 
-    .navbar-collapse {
-        align-items: left;
 
-    }
+
 
 
     .nav-wrapper {
@@ -91,7 +87,7 @@
     }
 
     .logo {
-           
+
         width: 60px;
         float: left;
         margin-left: 50px;
@@ -107,22 +103,33 @@
         margin-top: 25px;
         font-family: 'Roboto Slab', serif;
         font-size: 23px;
-      
-    
+
+
+
+
     }
 
     .fixed-top {
-       
-   
+
+
         background-color: rgba(0, 0, 0, 0.767);
         margin-top: 25px;
         font-family: 'Roboto Slab', serif;
         font-size: 23px;
-      
-        
 
-      
+
+
+
     }
 
 
+}
+
+button.menu-button.btn.btn-primary {
+    display: none;
+}
+
+
+.mobile-nav {
+    display: none;
 }

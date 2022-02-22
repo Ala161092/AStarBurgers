@@ -14,13 +14,14 @@
             h1 {
                 font-size: 25px;
                 word-spacing: 2px;
-               
+
             }
 
             .btn {
                 padding: 5px, 10px;
                 font-size: 15px;
             }
+
             p {
                 width: 100%;
             }
@@ -29,7 +30,8 @@
     }
 
 
-    /*--Nav--*/
+
+    /*------Nav------*/
 
     .header-wrapper {
 
@@ -43,119 +45,94 @@
 
         .nav {
             font-size: 18px;
+            display: none;
         }
     }
 
 
+    .mobile-nav {
+        display: block;
 
-    /*-----------About--------------*/
 
-    .about-wrapper {
-        width: 100%;
-        max-width: 400px;
-        margin-top: 30px;
-        margin-left: 25px;
-
-        h2 {
-            font-size: 30px;
+        /* Position and sizing of burger button */
+        .bm-burger-button {
+            position: fixed;
+            width: 36px;
+            height: 30px;
+            right: 36px;
+            top: 36px;
         }
 
-
-        .long-copy {
-            width: 100%;
-            text-align: left;
+        /* Color/shape of burger icon bars */
+        .bm-burger-bars {
+            background: #f4bf2b;
         }
 
-
-        .about-card-container {
-            flex-direction: column;
-
-
-
-
-            .cards {
-                width: 100%;
-                text-align: left;
-
-
-                h3 {
-                    font-size: 21px;
-                }
-
-                svg {
-                    font-size: 50px;
-                }
-
-                img {
-                    width: 80px;
-                }
-
-
-
-                p {
-                    text-align: left;
-                    margin: 0;
-                    margin-top: 20px;
-                    width: 100%;
-                }
-            }
+        /* Color/shape of burger icon bars on hover*/
+        .bm-burger-bars-hover {
+            background: hsla(44, 90%, 56%, 0.726);
         }
-    }
 
-
-    /*-----------Menu--------------*/
-
-    .menu-wrapper {
-
-
-        .card-container {
-            grid-template-columns: 1fr;
+        /* Position and sizing of clickable cross button */
+        .bm-cross-button {
+            height: 66px;
+            width: 66px;
         }
-    }
 
-
-     /*-----------Menu--------------*/
-     .meals-wrapper {
-
-        .meal-show-container {
-
-
-            li {
-                width: 50%;
-            }
-
+        /* Color/shape of close button cross */
+        .bm-cross {
+            background: #ffffff;
         }
-     }
+
+        /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+        .bm-menu-wrap {
+            position: fixed;
+            height: 100%;
+        }
+
+        /* General sidebar styles */
+        .bm-menu {
+            background: #000000e0;
+            padding: 2.5em 1.5em 0;
+            font-size: 1.15em;
+        }
+
+        /* Morph shape necessary with bubble or elastic */
+        .bm-morph-shape {
+            fill: #373a47;
+        }
+
+        /* Wrapper for item list */
+        .bm-item-list {
+            color: #b8b7ad;
+            padding: 0.8em;
 
 
+            a {
+                color: white;
+                text-decoration: none;
+                margin-bottom: 20px;
 
-    /*-----------Contact--------------*/
-
-    .contact-wrapper {
-
-        .form-wrapper {
-            flex-direction: column;
-            gap: 50px;
-
-
-
-            form {
-                width: 90%;
-            }
+                &:hover {
+                    text-decoration: underline 4px solid hsla(44, 90%, 56%, 0.726);
+                    color: white;
 
 
-
-            .contact-details {
-                width: 90%;
-                height: 300px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-
-
-                ion-icon {
-                    font-size: 40px;
                 }
             }
+        }
+
+        /* Individual item */
+        .bm-item {
+            display: inline-block;
+        }
+
+        /* Styling of overlay */
+        .bm-overlay {
+            background: rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -165,19 +142,164 @@
 
 
 
+
+/*-----------About--------------*/
+
+.about-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: 25px;
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    .long-copy {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    .about-card-container {
+        flex-direction: column;
+
+
+
+
+        .cards {
+            width: 100%;
+            text-align: left;
+
+
+            h3 {
+                font-size: 21px;
+            }
+
+            svg {
+                font-size: 50px;
+            }
+
+            img {
+                width: 80px;
+            }
+
+
+
+            p {
+                text-align: left;
+                margin: 0;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/*-----------Menu--------------*/
+
+.menu-wrapper {
+
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*-----------Menu--------------*/
+.meals-wrapper {
+
+    .meal-show-container {
+
+
+        li {
+            width: 50%;
+        }
+
+    }
+}
+
+
+
+/*-----------Contact--------------*/
+
+.contact-wrapper {
+
+    .form-wrapper {
+        flex-direction: column;
+        gap: 50px;
+
+
+
+        form {
+            width: 90%;
+        }
+
+
+
+        .contact-details {
+            width: 90%;
+            height: 300px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+
+            ion-icon {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+button.menu-button.btn.btn-primary {
+    display: block;
+    position: fixed;
+    right: 6px;
+
+
+}
+
+.menu-button.btn.btn-primary {
+    background-color: rgba(0, 0, 0, 0.212);
+    border: none;
+    font-size: 30px;
+    outline: 0;
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+    &:active {
+        border: none;
+        box-shadow: none;
+    }
+
+    &:hover {
+        border: none;
+    }
+
+}
+
+
+
+
 /*----------------------- Small phones to small tablets: from 481px to 767px------------------*/
 @media (min-width: 501px) and (max-width: 767px) {
 
-/*-------Header-------*/
+    /*-------Header-------*/
 
     .header {
 
         width: 100%;
         height: 80vh;
-        
+
         .hero-text-box {
-           width: 80%;
-          
+            width: 80%;
+
 
 
             h1 {
@@ -197,42 +319,23 @@
 
 
 
- /*------Nav------*/
 
-    .header-wrapper {
+    /*-----------About--------------*/
+
+    .about-wrapper {
         width: 100%;
 
 
-        .nav-wrapper {
 
-            .logo {
-                width: 60px;
-            }
+        .long-copy {
+            width: 80%;
+            text-align: left;
         }
 
 
-        .nav {
-            font-size: 22px;
-        }
-    }
-
-
-     /*-----------About--------------*/
-
-     .about-wrapper {
-         width: 100%;
-        
-
-
-         .long-copy {
-             width: 80%;
-             text-align: left;
-         }
-
-
-         .about-card-container {
-             width: 80%;
-             flex-direction: column;
+        .about-card-container {
+            width: 80%;
+            flex-direction: column;
 
 
 
@@ -261,21 +364,21 @@
                     width: 100%;
                 }
             }
-         }
-     }
+        }
+    }
 
-     /*-----------Menu--------------*/
+    /*-----------Menu--------------*/
 
-     .menu-wrapper {
+    .menu-wrapper {
 
         .card-container {
             grid-template-columns: 1fr 1fr;
         }
-     }
+    }
 
-      /*-----------Contact--------------*/
+    /*-----------Contact--------------*/
 
-      .contact-wrapper {
+    .contact-wrapper {
 
         .form-wrapper {
             flex-direction: column;
@@ -299,7 +402,7 @@
                 }
             }
         }
-      }
+    }
 
 
 

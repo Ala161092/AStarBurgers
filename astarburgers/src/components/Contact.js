@@ -11,20 +11,6 @@ const Contact = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     if (name && email && message) {
-      // send(
-      //     'service_09hnpa9',
-      //     'template_0a4i31f',
-      //     toSend,
-      //     'user_sBqMaHIyQs01RJo9FTsWG'
-      // )
-      // .then((response) => {
-      //     setsuccessfulMessage('Thank you, email has been sent. We will contact you shortly')
-      //     console.log('Success, email has been sent', response.status, response.text)
-      // })
-      // .catch((error) => {
-      //     setsuccessfulMessage('Error, check all details have been written correctly')
-      //     console.log('Error, check all details have been written correctly', error)
-      // })
       const serviceId = "service_09hnpa9";
       const templateId = "template_0a4i31f";
       const userId = "user_sBqMaHIyQs01RJo9FTsWG";

@@ -21,8 +21,9 @@ const About = () => {
           <h3>Catering</h3>
           <p>
             Completely self-sufficent catering unit, we can cater to:
-            <br/>
-            Large Sporting Events, Festivals, Weddings, Street Parties & Carnivals
+            <br />
+            Large Sporting Events, Festivals, Weddings, Street Parties &
+            Carnivals
           </p>
         </section>
         <section className="cards">

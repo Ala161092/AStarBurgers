@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-import Nav2 from "./Nav2";
-import heroLogo from '../assets/logo2.png'
+import heroLogo from "../assets/logo2.png";
+import MobileNav from "./MobileNav";
+import Navigation from "./Nav";
 
 const Header = () => {
   return (
     <div className="header-wrapper" id="home">
-      <img className='logo' src={heroLogo}/>
-      <Nav2 />
+      <img className="logo" src={heroLogo} />
       <div className="header">
+        <Navigation />
+        <MobileNav />
         <div className="hero-text-box">
           <h1>"Good Food, Good Mood"</h1>
           <p>
