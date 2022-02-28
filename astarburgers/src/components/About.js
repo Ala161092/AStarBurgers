@@ -20,7 +20,7 @@ const About = () => {
           <FaCaravan fontSize="70px" color="#f4bf2b" />
           <h3>Catering</h3>
           <p>
-            Completely self-sufficent catering unit, we can cater to:
+          We operate a completely self-sufficient catering unit. We can cater to:
             Large Sporting Events, Festivals, Weddings, Street Parties &
             Carnivals
           </p>
@@ -29,8 +29,7 @@ const About = () => {
           <img src={ncassLogo} />
           <h3>NCASS Member</h3>
           <p>
-            We are members of NCASS.All members of staff are fully
-            qualified. 
+             We are members of NCASS. All members of staff are fully qualified.
             <br/>
             We operate with full liability insurance.
           </p>
@@ -39,7 +38,7 @@ const About = () => {
           <FaCarrot fontSize="70px" color="#f4bf2b" />
           <h3>Dietary & Allergens</h3>
           <p>
-          AStar burgers are able to cater to most food allergens. 
+          Astarburgers are able to cater to most food allergens. 
           Please let us know if you have any special dietary requirements.
           </p>
         </section>
