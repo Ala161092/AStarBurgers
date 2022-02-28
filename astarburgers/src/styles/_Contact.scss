@@ -54,6 +54,7 @@
                 border: 0px;
                 border-bottom: 2px solid #ccc;
                 text-align: left;
+                font-family: 'Roboto Slab';
 
             }
 
@@ -85,11 +86,17 @@
             width: 50%;
             padding-top: 60px;
             padding-bottom: 60px;
+            gap: 10px;
 
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
 
+            .number a {
+                text-decoration: none;
+                color: white;
+                margin-bottom: 10px;
+            }
 
 
             ion-icon {

@@ -11,9 +11,9 @@ const Contact = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     if (name && email && message) {
-      const serviceId = "service_09hnpa9";
-      const templateId = "template_0a4i31f";
-      const userId = "user_sBqMaHIyQs01RJo9FTsWG";
+      const serviceId = "service_kkkrdwh";
+      const templateId = "template_s42s6xn";
+      const userId = "user_h7GBry0USa8N4h5owmvzo";
       const templateParams = {
         name,
         email,
@@ -36,10 +36,11 @@ const Contact = () => {
     <div className="contact-wrapper">
       <div className="form-wrapper" id="contact">
         <form onSubmit={onSubmit}>
-          <h2>Contact Us</h2>
+          <h2>Get in touch</h2>
           <p className="left-para">
-            Contact our team if you require any further information regarding
-            events that we can cater for and any personalized quotes.
+          Contact our team for your personalised catering quote.
+          <br/>
+          No event is too big or too small.
           </p>
           <input
             type="text"
@@ -74,9 +75,11 @@ const Contact = () => {
           </span>
         </form>
         <div className="contact-details">
-          <div>
-            <ion-icon name="phone-portrait-outline" />
-            <p>+44 02078560391</p>
+          <div className="number">
+          <ion-icon name="phone-portrait-outline" />
+          <br/>
+            <a href="tel:02078560391">02078560391</a>
+
           </div>
           <div>
             <ion-icon name="mail-outline" />

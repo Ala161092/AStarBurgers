@@ -13,9 +13,10 @@ const Header = () => {
         <Navigation />
         <MobileNav />
         <div className="hero-text-box">
-          <h1>"Good Food, Good Mood"</h1>
+        <img className="logoMobile" src={heroLogo} />
+          <h1>Good Food, Good Mood</h1>
           <p>
-            Our motto is good food good mood, and we stand on this. With over 26
+            Our motto is <span className="font-weight-500">"good food good mood"</span>, and we stand on this. With over 26
             years of catering experience we are no strangers to working with the
             public and delivering an Astar service.
           </p>
