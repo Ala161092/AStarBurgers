@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="number">
           <ion-icon name="phone-portrait-outline" />
           <br/>
-            <a href="tel:02078560391">02078560391</a>
+            <a href="tel:02078560391">0207 856 0391</a>
 
           </div>
           <div>

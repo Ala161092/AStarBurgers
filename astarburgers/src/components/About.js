@@ -22,7 +22,7 @@ const About = () => {
           <p>
           We operate a completely self-sufficient catering unit. We can cater to:
             Large Sporting Events, Festivals, Weddings, Street Parties &
-            Carnivals
+            Carnivals.
           </p>
         </section>
         <section className="cards">
