@@ -6,7 +6,7 @@ import { Card } from "react-bootstrap";
 const Menu = () => {
   return (
     <div className="wrapper" id="menu">
-      <h2>Burger Menu</h2>
+      <h2>Astar Menu</h2>
       <div className="menu-wrapper">
         <div className="card-container">
           <Card>
